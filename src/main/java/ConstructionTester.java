@@ -5,10 +5,7 @@ public class ConstructionTester
 {
     public static void main(String[] args)
     {
-      
-      
-      
-
+    
         double tRat;
         int wind;
         int bord;
@@ -20,14 +17,14 @@ public class ConstructionTester
         
         System.out.println("Enter the sales tax rate: ");
         tRat = scan.nextDouble();
-
-        Construction con = new Construction(tRat);
-        
         System.out.println("How many boards do you need? ");
         bord = scan.nextInt();
-        bordc = con.lumberCost(bord);
         System.out.println("How many windows do you need? ");
         wind = scan.nextInt();
+        
+        Construction con = new Construction(8, 11, tRat);
+        
+        bordc = con.lumberCost(bord);
         winc = con.windowCost(wind);
         tot = winc + bordc;
         System.out.println("Total: " + tot);
