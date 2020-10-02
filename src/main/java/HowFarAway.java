@@ -21,6 +21,6 @@ public class HowFarAway
         System.out.print("Enter the longitude of the ending location: ");
         elon = scan.nextDouble();
         
-        System.out.print("The distance is " + dis);
+        System.out.print("The distance is ");
     }
 }

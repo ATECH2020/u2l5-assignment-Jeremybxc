@@ -6,10 +6,10 @@ public class Construction
     double taxRate; 
    
     
-    public Construction(double lumberCost, double windowCost, double taxes)
+    public Construction(double taxes)
     {
-        lumber = lumberCost;
-        windows = windowCost;
+        lumber = 8;
+        windows = 11;
         taxRate = taxes;
     }
     
